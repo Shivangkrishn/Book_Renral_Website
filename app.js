@@ -5,7 +5,7 @@ const ejs = require("ejs");
 const store = [];
 const homeStartingContent = {
   rating: 4,
-  username: "Shailesh",
+  username: "Shivang",
   review:
     "The book arrived without any damages and came earlier than expected! The weird thing is I got a signed copy!?!?! I'm really happy about that :) Also can't wait to read it",
 };
