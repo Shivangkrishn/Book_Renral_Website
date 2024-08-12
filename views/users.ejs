@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/14204b4342.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
+
+
+    <title>users</title>
+</head>
+
+<body>
+
+    <!-- USERS -->
+    <div class="users bg-black">
+        <div class="tag">
+            <h1 class="pt-4 pl-24 font-medium text-2xl font-serif text-white underline underline-offset-4">Our
+                Hot Rentals :
+            </h1>
+        </div>
+
+        <div class="users p-10 justify-center text-center flex gap-x-12 ">
+            <div class="counter-box px-10 p-8 pt-6 pb-6 border rounded-md border-gray-600 ">
+                <p class="text-yellow-100">
+                    <i class="fa fa-users "></i>
+                </p>
+                <h1 class="counter text-white p-4 text-5xl   ">97150
+                </h1>
+                <p class=" text- pb-4 text-white">Happy Patrons</p>
+            </div>
+
+            <div class="counter-box px-10 p-8 pt-6 pb-6 border rounded-md border-gray-600 ">
+                <i class="fa fa-users text-white"></i>
+                <h1 class="counter text-white p-4 text-5xl   ">21429
+                </h1>
+                <p class=" text- pb-4 text-white">Books</p>
+            </div>
+
+            <div class="counter-box px-10 p-8 pt-6 pb-6 border rounded-md border-gray-600 ">
+                <i class="fa fa-users text-white"></i>
+                <h1 class="counter text-white p-4 text-5xl   ">20928
+                </h1>
+                <p class=" text- pb-4 text-white">Deliveries Made</p>
+            </div>
+
+            <div class="counter-box px-10 p-8 pt-6 pb-6 border rounded-md border-gray-600 ">
+                <i class="fa fa-users text-white"></i>
+                <h1 class="counter text-white p-4 text-5xl   ">61234
+                </h1>
+                <p class=" text- pb-4 text-white">Books Lent Out</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+    <script>
+        (function (e) {
+
+            "use strict";
+            e.fn.counterUp = function (t) {
+                var n = e.extend({ time: 400, delay: 10 }, t);
+                return this.each(function () {
+                    var t = e(this),
+                        r = n,
+                        i = function () {
+                            var e = [],
+                                n = r.time / r.delay,
+                                i = t.text(),
+                                s = /[0-9]+,[0-9]+/.test(i);
+                            i = i.replace(/,/g, "");
+                            var o = /^[0-9]+$/.test(i),
+                                u = /^[0-9]+\.[0-9]+$/.test(i),
+                                a = u ? (i.split(".")[1] || []).length : 0;
+                            for (var f = n; f >= 1; f--) {
+                                var l = parseInt((i / n) * f);
+                                u && (l = parseFloat((i / n) * f).toFixed(a));
+                                if (s)
+                                    while (/(\d+)(\d{3})/.test(l.toString()))
+                                        l = l.toString().replace(/(\d+)(\d{3})/, "$1,$2");
+                                e.unshift(l);
+                            }
+                            t.data("counterup-nums", e);
+                            t.text("0");
+                            var c = function () {
+                                t.text(t.data("counterup-nums").shift());
+                                if (t.data("counterup-nums").length)
+                                    setTimeout(t.data("counterup-func"), r.delay);
+                                else {
+                                    delete t.data("counterup-nums");
+                                    t.data("counterup-nums", null);
+                                    t.data("counterup-func", null);
+                                }
+                            };
+                            t.data("counterup-func", c);
+                            setTimeout(t.data("counterup-func"), r.delay);
+                        };
+                    t.waypoint(i, { offset: "100%", triggerOnce: !0 });
+                });
+            };
+        })(jQuery);
+    </script>
+
+</body>
+
+</html>

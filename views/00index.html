@@ -1,0 +1,428 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/14204b4342.js" crossorigin="anonymous"></script>
+
+    <title>MAIN</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR-->
+    <div class="bg-gradient-to-r from-green-400 to-blue-500">
+        <div class="flex items-start bg--400 justify-between h-28 ">
+            <div class="px-10">
+                <h1 class="text-4xl font-semibold px-8 py-3 space-x-1">
+                    <i class="fa-solid fa-book"></i>LookBooK
+                </h1>
+                <span class="text-left px-8 text-md font-medium hover:scale-110 hover:duration-200 ">Your Friendly
+                    Store</span>
+            </div>
+            <div class="justify-end ">
+                <div class="mt-3 -mx-3">
+                    <ul class="flex text-white ">
+                        <li class="px-3 cursor-pointer hover:scale-110 hover:duration-200 ">Home |</li>
+                        <li class="px-3 cursor-pointer hover:scale-110 hover:duration-200 ">About |</li>
+                        <li class="px-3 cursor-pointer hover:scale-110 hover:duration-200 ">Contact |</li>
+                        <li class="px-3 cursor-pointer hover:scale-110 hover:duration-200 ">Sign up</li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <input
+                        class="h-8 pr-36 mt-4 rounded-l-md outline-blue-500 border-2 border-gray-400 hover:border-black"
+                        type="text" placeholder="Title / Author">
+                    <button class="h-8 mr-20 mt-4 -pb-6 p-2 bg-gray-800 rounded-r-md text-white hover:bg-blue-500"
+                        type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <ul class="px-10 py-6 flex bg-[#404258] text-white">
+            <li class="mx-8 text-lg font-medium cursor-pointer hover:scale-125 hover:duration-200 ">Home </li>
+            <li class="mx-12 text-lg font-medium cursor-pointer hover:scale-125 hover:duration-200 ">About </li>
+            <li class="mx-12 text-lg font-medium cursor-pointer hover:scale-125 hover:duration-200 ">Contact </li>
+            <li class="mx-12 text-lg font-medium cursor-pointer hover:scale-125 hover:duration-200 ">Sign up</li>
+        </ul>
+    </div>
+
+    </div>
+
+
+    <!-- RENT UNLIMITED -->
+    <div>
+        <!-- marquee container -->
+        <div class="bg-black text-center text-white h-16 pt-2 text-3xl ">
+            <marquee behavior="slide" vspace="4px" loop="20">
+                🎁 20% Off New Gift Memberships, Promo Code: PIY22
+                <button class="bg-red-500 px-4 rounded-md" type="submit">Buy Now</button>
+            </marquee>
+        </div>
+
+        <!-- left half -->
+        <div class="grid grid-flow-col py-4">
+            <div class=" bg-gray-100 px-16">
+                <h1 class="text-5xl mt-6 font-sans font-bold">Rent Unlimited Books</h1>
+                <p class="text-xl mt-8 font-semibold text-gray-700">Rentikng Books saves your </p>
+                <p class="text-xl mt-2 font-semibold text-gray-700"> Time, Money , Shelf space and the Enviornment</p>
+                <ul class="pt-14 flex text-lg font-medium text-red-700 cursor-pointer ">
+                    <li class="mr-10 ">Free Shipping</li>
+                    <li class="mx-10 ">No Due Dates</li>
+                    <li class="mx-10 ">Cancel Anytime</li>
+                </ul>
+            </div>
+            <!-- right half  -->
+            <div>
+                <img class="h-72 w-full pr-1" src="Project/readinG_w0.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!-- CAROUSEL OF IMAGES-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner bg-blue-300 p-16 my-6">
+                <div class="carousel-item active ">
+                    <table>
+                        <tr class="flex space-x-8">
+                            <td>
+                                <div
+                                    class="bg- ml-9 text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="h-64 w-52 rounded-lg" src="project/1.jpg" alt="">
+                                    <p class="pt-3 font-semibold">Forest of a Thousand Years</p>
+                                    <p class="pt-2 text-md text-gray-600 ">Julie C. Dao</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg" src="project/2.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">Last Thing He Told Me</p>
+                                    <p class="pt-2 text-md text-gray-600 ">Laura Dave</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg" src="project/3.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">Where the Crawdads Sing</p>
+                                    <p class="pt-2 text-md text-gray-600 ">Delia Owens</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg" src="project/4.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">The Namesake</p>
+                                    <p class="pt-2 text-md text-gray-600 ">Jhumpa Lahiri</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg" src="project/5.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">I'll be Gone in the Dark</p>
+                                    <p class="pt-2 text-md text-gray-600">Michelle McNamara</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="carousel-item ">
+                    <table>
+                        <tr class="flex space-x-8">
+                            <td>
+                                <div
+                                    class="bg- ml-9 text-black  text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="h-64 w-52 rounded-lg" src="project/6.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">The Girl from Slient Lake</p>
+                                    <p class="pt-2 text-md text-gray-600 ">Leslie Wolfe</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg" src="project/7.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">It Ends With Us</p>
+                                    <p class="pt-2 text-md text-gray-600 ">Colleen Hoover</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg" src="project/8.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">Godan</p>
+                                    <p class="pt-2 text-md text-gray-600">Premchand</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg" src="project/9.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">The Merchant of Venice</p>
+                                    <p class="pt-2 text-md text-gray-600">William Shakespeare</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg" src="project/10.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">The Amityville Horror</p>
+                                    <p class="pt-2 text-md text-gray-600">Jay Anson</p>
+                                </div>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="carousel-item">
+                    <table>
+                        <tr class="flex space-x-8">
+                            <td>
+                                <div
+                                    class="bg- ml-9 text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="h-64 w-52 rounded-lg" src="project/11.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">The Great Gatsby</p>
+                                    <p class="pt-2 text-md text-gray-600">F. Scott Fitzgerald</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200 ">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg " src="project/12.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">The Diary of a Young Girl</p>
+                                    <p class="pt-2 text-md text-gray-600">Anne frank</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3  hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg " src="project/13.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">The Madeness of Crowd</p>
+                                    <p class="pt-2 text-md text-gray-600">Louise Penny</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3 hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg" src="project/14.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">A Tale of Two Cities</p>
+                                    <p class="pt-2 text-md text-gray-600">Charles Dickens</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="bg- text-black text-center p-3  hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover: duration-200">
+                                    <img class="object-cover-down h-64 w-52 rounded-lg" src="project/15.jpg" alt="">
+                                    <p class="pt-3 font-semibold ">This Tender Land</p>
+                                    <p class="pt-2 text-md text-gray-600">William K. Krueger</p>
+                                </div>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev -mx-16" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden mr-">Previous</span>
+            </button>
+            <button class="carousel-control-next -mx-16" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden ">Next</span>
+            </button>
+        </div>
+
+
+        <!-- FEATURED IN -->
+        <div class="mb-3">
+            <div class="h-12 bg-black text-center text-white  text-3xl ">
+                <h1 class="pt-2">Featured In</h1>
+            </div>
+
+            <div class="flex pt-16 bg-fuchsia-200 gap-x-20">
+                <img class="ml-28" src="Project/i2.png" alt="1">
+                <img src="Project/i1.png" alt="2">
+                <img src="Project/i3.png" alt="3">
+                <img src="Project/i4.png" alt="4">
+                <img src="Project/i5.png" alt="5">
+                <img src="Project/i7.png" alt="6">
+                <img src="Project/i6.png" alt="7">
+            </div>
+            <div class="flex gap-x-32 bg-yellow-100 p-20">
+                <div class="ml-12">
+                    <p>
+                        Read to your heart's content with our book rental service. Imagine having the latest titles and
+                        the
+                        best
+                        classics delivered right to your door. No more trips to the library only to find out the items
+                        you
+                        want are
+                        already checked out. No more costly trips to the local bookstore.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Large selection of paperback, children's, & audio books. Convenience of home delivery with FREE
+                        shipping.
+                        Numerous book rental plans to fit your needs. No due dates or late fees when renting books.
+                        Superior
+                        customer
+                        service. No commitments, cancel anytime. Environmentally friendly.
+                    </p>
+                </div>
+                <div class="mr-16">
+                    <p>
+                        "Thank you very much for providing such a great service. Rest assured that I recommend you to my
+                        friends,
+                        family, and co-workers at every opportunity. I look forward to a long and happy relationship
+                        with
+                        LookBook
+                        as a satisfied customer."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRICING-->
+        <div class="pricing mt-3 p-10 justify-center text-center flex gap-x-12 bg-red-800 ">
+            <div class="px-10 p-8 pt-6 pb-6 border rounded-lg border-yellow-300 hover:border-orange-600">
+                <p class=" text- pb-4 text-white">1-MONTH</p>
+                <h1 class="text-white p-4 text-5xl  border-b-2 border-gray-700 hover:border-orange-600 border-t-2 ">₹
+                    600
+                </h1>
+                <ul class="mt-6 space-y-1 text-white cursor-text">
+                    <li class="line text-sm pt-3">Any number of deliveries</li>
+                    <li class="line text-sm pt-3">No deposit, joining fee</li>
+                    <li class="line text-sm pt-3">2 books/delivery: ₹ 600</li>
+                    <li class="line text-sm pt-3">4 books/delivery: ₹ 700</li>
+                    <li class="line text-sm pt-3">6 books/delivery: ₹ 800</li>
+                </ul>
+            </div>
+
+            <div class="px-10 p-8 pt-6 pb-6 border rounded-lg border-gray-600 hover:border-orange-600">
+                <p class=" text- pb-4 text-white">3-MONTH</p>
+                <h1 class="text-white p-4 text-5xl  border-b-2 border-gray-700 hover:border-orange-600 border-t-2 ">₹
+                    1200
+                </h1>
+                <ul class="mt-6 space-y-1 text-white cursor-text">
+                    <li class="line text-sm pt-3">Any number of deliveries</li>
+                    <li class="line text-sm pt-3">No deposit, joining fee</li>
+                    <li class="line text-sm pt-3">2 books/delivery: ₹ 1200</li>
+                    <li class="line text-sm pt-3">4 books/delivery: ₹ 1300</li>
+                    <li class="line text-sm pt-3">6 books/delivery: ₹ 1400</li>
+                </ul>
+            </div>
+
+            <div class="px-10 p-8 pt-6 pb-6 border rounded-lg border-gray-600 hover:border-orange-600">
+                <p class=" text- pb-4 text-white">6-MONTH
+                </p>
+                <h1 class="text-white p-4 text-5xl  border-b-2 border-gray-700 hover:border-orange-600 border-t-2 ">₹
+                    2100
+                </h1>
+                <ul class="mt-6 space-y-1 text-white cursor-text">
+                    <li class="line text-sm pt-3">Any number of deliveries</li>
+                    <li class="line text-sm pt-3">No deposit, joining fee</li>
+                    <li class="line text-sm pt-3">2 books/delivery: ₹ 2100</li>
+                    <li class="line text-sm pt-3">4 books/delivery: ₹ 2300</li>
+                    <li class="line text-sm pt-3">6 books/delivery: ₹ 2500</li>
+                </ul>
+            </div>
+
+            <div class="px-10 p-8 pt-6 pb-6 border rounded-lg border-orange-600 ">
+                <p class=" text-xl pb-4 text-white">12-MONTH
+                    <br>
+                    <span class="italic">BEST VALUE</span>
+                </p>
+                <h1 class="text-white p-4 text-5xl border-b-2 border-orange-500 border-t-2 ">₹ 3600</h1>
+                <ul class="pt-6 space-y-1 text-white cursor-text">
+                    <li class="line text-sm pt-3">Any number of deliveries</li>
+                    <li class="line text-sm pt-3">No deposit, joining fee</li>
+                    <li class="line text-sm pt-3">2 books/delivery: ₹ 3600</li>
+                    <li class="line text-sm pt-3">4 books/delivery: ₹ 4000</li>
+                    <li class="line text-sm pt-3">6 books/delivery: ₹ 4400</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- FOOTERS -->
+        <div class="footer flex gap-x-20 mt-3 bg-black">
+            <div class="mx-20  mt-9 mb-9">
+                <p class="text-xl font-bold text-white">Links</p>
+                <ul class="mt-6 space-y-1 text-white cursor-pointer">
+                    <li class="line">About Us</li>
+                    <li class="line">Contact Us</li>
+                    <li class="line">Help / FAQ</li>
+                    <li class="line">Media Center</li>
+                    <li class="line">Affiliates</li>
+                </ul>
+            </div>
+
+            <div class="mx-20 mt-9 mb-9 ">
+                <p class="text-xl font-bold text-white">More</p>
+                <ul class="mt-6 space-y-1 text-white cursor-pointer">
+                    <li class="line">Gift Memberships</li>
+                    <li class="line">Browse Books</li>
+                    <li class="line">Browse AudioBooks</li>
+                    <li class="line">RSS Feeds</li>
+                    <li class="line">Sitemap</li>
+                </ul>
+            </div>
+
+            <div class="mx-20  mt-9 mb-9">
+                <p class="text-xl font-bold text-white ">Sign Up</p>
+                <ul class="mt-6 space-y-1 text-white cursor-pointer">
+                    <li class="line">Rent Books</li>
+                    <li class="line">Rent Audiobooks</li>
+                    <li class="line">Privacy Policy</li>
+                    <li class="line">Terms & Condition</li>
+                </ul>
+            </div>
+
+            <div class="mx-20  mt-9 mb-9">
+                <p class="text-xl font-bold text-white ">Socials</p>
+                <ul class="pt-6 space-y-2 cursor-pointer">
+                    <li class="text-yellow-200 text-2xl hover:text-pink-400"> <a href="https:\\www.instagram.com"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li class="text-yellow-200 text-2xl hover:text-blue-400"> <a href="https:\\www.fa-facebook.com"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li class="text-yellow-200 text-2xl hover:text-blue-400"> <a href="https:\\www.twitter.com"><i
+                                class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- copyrights lines-->
+        <p class="bg-black text-white text-center pt-4">Copyright © 2000 - 2021 BookLender.com</p>
+        <p class="bg-black text-white text-center pb-4"> BookLender.com is proudly maintained by PS²</p>
+        <div>
+</body>
+
+</html>
